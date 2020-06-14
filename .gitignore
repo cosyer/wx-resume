@@ -13,4 +13,4 @@ yarn-error.log*
 *.sln
 .idea
 package-lock
-yaen.lock
+yarn.lock
