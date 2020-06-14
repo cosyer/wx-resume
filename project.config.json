@@ -9,8 +9,8 @@
 	},
 	"miniprogramRoot": "dist/wx/",
 	"compileType": "miniprogram",
-	"appid": "wx90e0152d0799c39e",
-	"projectname": "my-intro",
+	"appid": "",
+	"projectname": "wx-resume",
 	"simulatorType": "wechat",
 	"simulatorPluginLibVersion": {},
 	"condition": {
