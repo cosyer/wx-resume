@@ -1,7 +1,7 @@
 <template>
   <div class="container">
     <div class="main">
-      <img src="/static/images/avatar.png"/>
+      <img src="/static/images/avatar.png" />
       <p class="name">陈宇</p>
       <p></p>
     </div>
@@ -56,40 +56,40 @@
 </script>
 
 <style lang="scss" scoped>
-  @import "../../styles/comm";
-  .container {
-    padding-top: 40rpx;
-    width: 750rpx;
-    height: 100%;
-    @include flex(column, flex-start, center);
-    .main {
-      @include w_h(670, 500);
-      @include flex($j: center, $a: center);
-      border-radius: 8rpx;
-      box-shadow: 0 10rpx 20rpx #1296db;
-      img {
-        @include w_h(200, 200);
-        border-radius: 100rpx;
-      }
-      .name {
-        margin-top: 40rpx;
-        text-align: center;
-        @include font(40, #000, 40, 600);
-      }
+@import "../../styles/comm";
+.container {
+  padding-top: 40rpx;
+  width: 750rpx;
+  height: 100%;
+  @include flex(column, flex-start, center);
+  .main {
+    @include w_h(670, 500);
+    @include flex($j: center, $a: center);
+    border-radius: 8rpx;
+    box-shadow: 0 10rpx 20rpx #1296db;
+    img {
+      @include w_h(200, 200);
+      border-radius: 100rpx;
     }
-    .base {
-      margin-top: 80rpx;
-      width: 670rpx;
-      border-radius: 8rpx;
-      box-shadow: 0 10rpx 20rpx #1296db;
-      .box {
-        margin-top: 20rpx;
-        margin-bottom: 20rpx;
-        p {
-          text-align: center;
-          @include font(32, #000, 50, 400);
-        }
+    .name {
+      margin-top: 40rpx;
+      text-align: center;
+      @include font(40, #000, 40, 600);
+    }
+  }
+  .base {
+    margin-top: 80rpx;
+    width: 670rpx;
+    border-radius: 8rpx;
+    box-shadow: 0 10rpx 20rpx #1296db;
+    .box {
+      margin-top: 20rpx;
+      margin-bottom: 20rpx;
+      p {
+        text-align: center;
+        @include font(32, #000, 50, 400);
       }
     }
   }
+}
 </style>

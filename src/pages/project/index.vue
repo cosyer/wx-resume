@@ -1,14 +1,21 @@
 <template>
   <div class="container">
     <div class="main">
-      <div class="project" v-for="(item, index) in list" :key="index">
+      <div
+        class="project"
+        v-for="(item, index) in list"
+        :key="index"
+      >
         <p class="name">{{item.name}}</p>
         <div class="header">
           <p>{{item.time}}</p>
           <p>{{item.work}}</p>
         </div>
         <div class="content">
-          <p v-for="(s, i) in item.desc" :key="i">{{s}}</p>
+          <p
+            v-for="(s, i) in item.desc"
+            :key="i"
+          >{{s}}</p>
         </div>
       </div>
     </div>
@@ -19,30 +26,30 @@
   export default {
     data: {
       list: [{
-        name: '“美翎服疗”app',
-        time: '2019.12 - 2020.2',
-        work: 'app及管理后台前端开发',
-        desc: ['1、使用flutter进行app开发，个人主要负责业务逻辑以及部分组件的开发。', '2、后台前端使用typescript+vue-cli开发，个人主要负责权限管理功能，使用vuex+vue-route实现。']
+        name: '社内私有云 FOne HCI 超融合',
+        time: '2020.3 - 2020.7',
+        work: '多平台前端开发',
+        desc: ['1. 参与回收站、备份、项目组架构、配额等业务需求的开发；', '2. 主导整合 storageJump、cloudJump 等系统平台的 UI 统一，体验优化；', '3. 搭建 mock server 平台并在团队中推广，提高前后端工作效率；', '4. 多次参与项目内技术分享活动，与团队共同学习成长。']
       }, {
-        name: '“流量蜂”系统一期',
-        time: '2019.9 - 2019.12',
-        work: '小程序及管理后台前端开发',
-        desc: ['1、流量蜂项目是一个分销系统，我们开发第三方小程序，让客户可以在后台进行小程序配置生成小程序，利用小程序进行商品分销。', '2、技术实现小程序使用mpvue+vuex开发，管理后台使用typescript+vue+ant design开发。', '3、流量蜂后台主要用于商品、用户、小程序的管理，流量蜂小程序实现分享及购买功能。']
+        name: '华为云文档数据库 DDS、多模 Nosql 数据库 Geminidb 控制台',
+        time: '2018.9 - 2020.3',
+        work: '价格计算器及控制台管理后台前端开发',
+        desc: ['1. 参与 DDS 功能模块的开发，官网价格计算器的月度版本的迭代和上线；', '2. 基于 ng7 搭建了 Geminidb(多模 NoSQL 数据库)项目结构并完成了 70%业务代码的开发；', '3. 输出国际化词条转换 excel 工具(重复词检测、excel 解析和生成)，提高了团队的工作效率；', '4. 基于 Selenium 等工具编写测试代码协助持续集成与自动化测试，保证代码的可靠和安全。']
       }, {
-        name: '“aha畅学礼包”小程序',
-        time: '2019.6 - 2019.9',
-        work: '小程序开发',
-        desc: ['1、该小程序主要用于公司aha年卡的分销，是公司重要收入来源。', '2、小程序使用mpvue框架进行开发，主要实现商品、分享功能，支付通过外部h5实现购买。']
+        name: '家政加',
+        time: '2018.1 - 2018.7',
+        work: 'rn微应用开发',
+        desc: ['1. 参与 React-Native 构建开发原生 app，封装提取公共组件、处理跨平台兼容性问题；', '2. 负责家政加 app 的阿姨管理，组织架构、优惠券促销等功能需求开发；', '3. 开发注册有礼和准点秒杀活动相关页面，并输出通用参数配置，方便运营人员修改。']
       }, {
-        name: '“喜得宝”管理后台',
-        time: '2019.4 - 2019.8',
-        work: '前端开发实习生',
-        desc: ['1、喜得宝是公司内部使用的管理系统，主要用于公司各个产品线日常工作开展。', '2、属于实习的练手项目，后台前端使用vue+elementUI实现，部分老代码还使用jQuery。']
+        name: 'PC 端 e 家政管理系统',
+        time: '2017.8 - 2018.1',
+        work: '管理后台前端开发',
+        desc: ['1. 担任 e 家政 PC 端管理系统的前端开发工作，重视组件封装与模块复用。使用 React 技术栈，利用 Echarts 渲染仪表盘/图表功能，封装 Handsontable 完成工作表、电子表格功能；', '2. 独立负责开发阿姨简历、面试流程、认证管理、快速收款等功能模块；', '3. 设计和封装表单、表格以及上传等公共组件，方便团队成员的复用提升开发效率。']
       }, {
-        name: '学生选课管理系统',
-        time: '2019.3 - 2019.4',
-        work: '毕业设计项目',
-        desc: ['前端使用原生微信小程序开发，后端使用springboot+jpa构建项目，使用mysql数据库，使用git进行版本控制。']
+        name: '智能大数据应用分析平台',
+        time: '2017.2 - 2017.6',
+        work: '前后端开发',
+        desc: ['1. 首次使用 React+AntDesign 和 spring-boot 框架进行前后端分离开发 web 单页应用；', '2. 参与了软件开发流程，提升了分享意识、良好的编程习惯和文档编写能力。']
       }]
     },
     onShareAppMessage () {}
@@ -50,37 +57,37 @@
 </script>
 
 <style scoped lang="scss">
-  @import "../../styles/comm";
-  .container {
-    padding: 40rpx 0;
-    width: 750rpx;
-    @include flex(column, flex-start, center);
-    .main {
-      width: 670rpx;
-      border-radius: 8rpx;
-      box-shadow: 0 10rpx 20rpx #1296db;
-      .project {
-        margin: 40rpx;
-        @include flex(column, flex-start, flex-start);
-        .name {
-          @include font(40, #1296db, 40, 600);
-          text-align: left;
+@import "../../styles/comm";
+.container {
+  padding: 40rpx 0;
+  width: 750rpx;
+  @include flex(column, flex-start, center);
+  .main {
+    width: 670rpx;
+    border-radius: 8rpx;
+    box-shadow: 0 10rpx 20rpx #1296db;
+    .project {
+      margin: 40rpx;
+      @include flex(column, flex-start, flex-start);
+      .name {
+        @include font(40, #1296db, 40, 600);
+        text-align: left;
+      }
+      .header {
+        margin-top: 40rpx;
+        @include flex(row, space-between, center);
+        flex-wrap: wrap;
+        p {
+          display: inline-block;
+          @include font(32, #000, 40, 500);
         }
-        .header {
-          margin-top: 40rpx;
-          @include flex(row, space-between, center);
-          flex-wrap: wrap;
-          p {
-            display: inline-block;
-            @include font(32, #000, 40, 500);
-          }
-        }
-        .content {
-          margin-top: 40rpx;
-          text-align: left;
-          @include font(28, #444, 36, 400);
-        }
+      }
+      .content {
+        margin-top: 40rpx;
+        text-align: left;
+        @include font(28, #444, 36, 400);
       }
     }
   }
+}
 </style>
