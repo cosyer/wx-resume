@@ -51,7 +51,12 @@
         this.workYear = Number(years).toFixed(1)
       }
     },
-    onShareAppMessage () {}
+    onShareAppMessage () {
+      return {
+        title: '陈宇的简历',
+        path: '/pages/basic/main'
+      }
+    }
   }
 </script>
 

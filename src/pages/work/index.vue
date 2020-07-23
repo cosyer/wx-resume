@@ -48,7 +48,12 @@
 <script>
   export default {
     data: {},
-    onShareAppMessage () {}
+    onShareAppMessage () {
+      return {
+        title: '陈宇的简历',
+        path: '/pages/basic/main'
+      }
+    }
   }
 </script>
 
